@@ -1,0 +1,10 @@
+.App {
+    text-align: center;
+}
+
+.logo {
+    display: block;
+    width: 30%;
+    padding-right: 5%;
+    margin: 20px auto;
+}
