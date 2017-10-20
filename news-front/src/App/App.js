@@ -2,17 +2,17 @@ import 'materialize-css/dist/css/materialize.min.css'
 import 'materialize-css/dist/js/materialize.min'
 
 import React from 'react';
-import logo from './logo.png'
 import './App.css';
 
+import Nav from '../Nav/Nav';
 import NewsPanel from '../NewsPanel/NewsPanel';
 
 class App extends React.Component {
     render() {
         return (
             <div>
-                <img className='logo' src={logo} alt='Sample News'/>
-                <div className='container'>
+                <Nav/>
+                <div className="news-section">
                     <NewsPanel/>
                 </div>
             </div>

@@ -8,8 +8,10 @@ class NewsCard extends React.Component {
 
     render() {
         return (
-            <div className='news-section row' onClick={() => this.redirectToUrl(this.props.news.url)}>
-                <h4>{this.props.news.title}</h4>
+            <div className='news-section row'>
+                <h4 onClick={() => this.redirectToUrl(this.props.news.url)}>
+                    <a className="title" href="#">{this.props.news.title}</a>
+                </h4>
                 <p>{this.props.news.description}</p>
                 <p>{this.props.news.time}</p>
             </div>
