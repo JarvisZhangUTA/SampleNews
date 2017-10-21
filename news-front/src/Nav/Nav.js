@@ -4,8 +4,13 @@ import 'materialize-css/dist/js/materialize.min'
 import React from 'react';
 import logo from './logo.png';
 import './Nav.css';
+import SignIn from "../SignIn/SignIn";
 
 class Nav extends React.Component {
+
+    constructor(props) {
+        super(props);
+    }
 
     render() {
         return (
@@ -23,7 +28,7 @@ class Nav extends React.Component {
     customerContent() {
         return (
             <li>
-               <a>???</a>
+                <a onClick={this.toggleSignIn}>Sign In</a>
             </li>
         );
     }

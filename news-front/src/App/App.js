@@ -12,7 +12,7 @@ class App extends React.Component {
         return (
             <div>
                 <Nav/>
-                <div className="news-section">
+                <div className="container">
                     <NewsPanel/>
                 </div>
             </div>
